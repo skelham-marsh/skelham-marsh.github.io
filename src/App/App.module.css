@@ -1,0 +1,42 @@
+h1 {
+  font-size: 5rem;
+  color: #F0F0F0;
+  font-family: Sail,cursive;
+}
+
+p {
+  font-size: 2rem;
+  color: #F0F0F0;
+  font-family: Jost,sans-serif;
+}
+
+.wrapper {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.box {
+  text-align: center;
+  border-right: 1px solid #F0F0F0;
+  padding: 0 34px;
+
+  &:last-child {
+    border: none;
+  }
+
+  h2 {
+    margin: 0px;
+    font-size: 56px;
+    font-weight: 300;
+    font-family: monospace;
+    
+  }
+
+  p {
+    margin: 0px;
+    color: #F0F0F0;
+    white-space: nowrap;
+  }
+}
