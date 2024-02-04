@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "^20",
+    "npm": "^10"
+  },
   "scripts": {
     "build": "vite build --config config/vite.config.js",
     "compile": "tsc --project config/tsconfig.json",
