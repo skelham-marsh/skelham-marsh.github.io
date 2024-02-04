@@ -23,12 +23,12 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <h1>Jon & Beth</h1>
 
       <p>We're getting married June 14th 2025</p>
 
-      <div className={styles.wrapper}>
+      <div className={styles.countdown}>
 
         <div className={styles.box}>
           <h2>{days}</h2>
