@@ -23,36 +23,38 @@ function App() {
   }, [])
 
   return (
-    <div className={styles.wrapper}>
-      <h1>Jon & Beth</h1>
-
-      <p>We're getting married June 14th 2025</p>
-
-      <div className={styles.countdown}>
-
-        <div className={styles.box}>
-          <h2>{days}</h2>
-          <p>Days</p>
-        </div>
-
-        <div className={styles.box}>
-          <h2>{hours}</h2>
-          <p>Hours</p>
-        </div>
-
-        <div className={styles.box}>
-          <h2>{minutes}</h2>
-          <p>Minutes</p>
-        </div>
-
-        <div className={styles.box}>
-          <h2>{seconds}</h2>
-          <p>Seconds</p>
-        </div>
-
+    <>
+      <div className={styles.header}>
+        <h1 className={styles.names}>Jon & Beth</h1>
       </div>
+      <div className={styles.body}>
 
-    </div>
+        <p>We're getting married <br /> June 14th 2025</p>
+
+        <div className={styles.countdown}>
+          <div className={styles.box}>
+            <h2>{days}</h2>
+            <p>Days</p>
+          </div>
+
+          <div className={styles.box}>
+            <h2>{hours}</h2>
+            <p>Hours</p>
+          </div>
+
+          <div className={styles.box}>
+            <h2>{minutes}</h2>
+            <p>Minutes</p>
+          </div>
+
+          <div className={styles.box}>
+            <h2>{seconds}</h2>
+            <p>Seconds</p>
+          </div>
+
+        </div>
+      </div>
+    </>
   )
 }
 
