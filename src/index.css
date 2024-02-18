@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 
 html, body, #root {
@@ -10,9 +11,21 @@ html, body, #root {
   line-height: 1.5;
   font-weight: 400;
 
+  --color-white:#F0F0F0;
+  --color-black:#0F0F0F;
+  --color-pure-white:#FFFFFF;
+  --color-theme-blue: #A5B6BE;
+  --color-theme-dark-blue: #04161B;
+
+  --color-background:#A5B6BE;
+
+  --color-text-primary:  var(--color-theme-blue);
+  --color-text-secondary: var(--color-theme-dark-blue);
+  --color-text-tertiary: var(--color-white);
+
   color-scheme: light dark;
-  color: #ffffffde;
-  background-color: #a5b6be;
+  color: var(--color-text-tertiary);
+  background-color: var(--color-background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

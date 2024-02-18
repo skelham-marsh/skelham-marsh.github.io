@@ -1,0 +1,35 @@
+.body {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  max-width: 100vw;
+
+  .text {
+    margin:0;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-family: Crimson Pro;
+    font-style: italic;
+
+    p {
+      margin:0; 
+    } 
+  }
+
+  .left {
+    flex: 1;
+  }
+
+  .right {
+    flex: 0;
+  }
+
+  img {
+    border-radius: 2rem;
+    margin: 4rem;
+    overflow: hidden;
+    max-width: 600px;
+  }
+}
