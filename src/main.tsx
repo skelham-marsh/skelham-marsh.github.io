@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import { Home } from './pages/Home/Home.tsx'
 import { FAQ } from './pages/FAQ/FAQ.tsx';
-import { Travel } from './pages/travel/Travel.tsx';
-import { Story } from './pages/story/Story.tsx';
+import { Travel } from './pages/Travel/Travel.tsx';
+import { Story } from './pages/Story/Story.tsx';
 import { Layout } from './components/Layout/Layout.tsx';
 
 import "./index.css"
