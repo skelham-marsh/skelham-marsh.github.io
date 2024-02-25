@@ -9,15 +9,15 @@
   padding: 2rem 0;
   cursor: pointer;
 
-  input{
+  input {
     display: none
-  } 
-  
-  label:has(input:checked) .answer {
+  }
+
+  input:checked~.answer {
     display: block;
   }
-  
-  h2, p{
+
+  h2, p {
     margin: 0;
     margin-bottom: 0.5rem;
   }
