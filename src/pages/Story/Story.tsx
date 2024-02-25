@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "./Story.module.css"
+import styles from "./Story.module.css"
 
 export function Story() {
   return <div className={styles.wrapper}>

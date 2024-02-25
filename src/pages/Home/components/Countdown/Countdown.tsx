@@ -1,5 +1,5 @@
 import React from "react"
-import * as styles from "./Countdown.module.css"
+import styles from "./Countdown.module.css"
 
 function calculateTime() {
   const delta = new Date("2025/06/14 15:00 UTC+01:00").getTime() - Date.now()
@@ -23,22 +23,22 @@ export function Countdown() {
   }, [])
   return (
     <div className={styles.countdown}>
-      <div className={styles.box}>
+      <div>
         <h2>{days}</h2>
         <p>Days</p>
       </div>
 
-      <div className={styles.box}>
+      <div>
         <h2>{hours}</h2>
         <p>Hours</p>
       </div>
 
-      <div className={styles.box}>
+      <div>
         <h2>{minutes}</h2>
         <p>Minutes</p>
       </div>
 
-      <div className={styles.box}>
+      <div>
         <h2>{seconds}</h2>
         <p>Seconds</p>
       </div>

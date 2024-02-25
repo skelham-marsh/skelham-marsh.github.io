@@ -1,5 +1,5 @@
 import React from "react"
-import * as styles from "./FAQ.module.css"
+import styles from "./FAQ.module.css"
 
 type FAQ = { question: string, answer: string }
 const FAQs: FAQ[] = [

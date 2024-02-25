@@ -1,5 +1,5 @@
 import React from "react"
-import * as styles from "./Travel.module.css"
+import styles from "./Travel.module.css"
 import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api'
 
 const OLD_HALL_ELY = {

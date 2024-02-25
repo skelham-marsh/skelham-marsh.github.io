@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from "./Home.module.css"
+import styles from "./Home.module.css"
 import { Countdown } from './components/Countdown/Countdown'
 
 export function Home() {
