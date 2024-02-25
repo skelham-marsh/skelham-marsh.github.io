@@ -9,26 +9,25 @@
   padding: 2rem 0;
   cursor: pointer;
 
+  input{
+    display: none
+  } 
+  
+  label:has(input:checked) .answer {
+    display: block;
+  }
+  
+  h2, p{
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .answer {
+    display: none;
+    white-space: preserve;
+  }
 }
 
 .faq:not(:last-child) {
   border-bottom: 1px solid var(--color-white);
-}
-
-
-.answer {
-  display: none;
-  white-space: preserve;
-}
-input{
-  display: none
-} 
-
-label:has(input:checked) .answer {
-  display: block;
-}
-
-h2, p{
-  margin: 0;
-  margin-bottom: 0.5rem;
 }

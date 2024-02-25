@@ -1,8 +1,9 @@
 .wrapper {
   max-width: 1200px;
   margin: auto;
-}
 
-h2{
-  margin-top: 5rem;
+  h2{
+    margin-top: 5rem;
+  }
+  
 }
