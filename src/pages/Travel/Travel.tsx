@@ -2,15 +2,19 @@ import React from "react"
 import styles from "./Travel.module.css"
 import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api'
 
+const googleMapsApiKey = import.meta.env.VITE_API_KEY
+
 const OLD_HALL_ELY = {
   lat: 52.382427,
   lng: 0.282677
 }
 
 export function Travel() {
+  console.log(googleMapsApiKey)
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: import.meta.env.VITE_API_KEY
+    googleMapsApiKey
   })
 
   return <div className={styles.wrapper}>
