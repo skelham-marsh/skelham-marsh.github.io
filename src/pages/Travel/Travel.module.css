@@ -4,7 +4,6 @@
 }
 
 .left, .right {
-
   height: 100%;
 }
 
@@ -14,10 +13,20 @@
   box-sizing: border-box;
 }
 
+.route {
+  margin: 1rem 0;
+  cursor: pointer;
+  text-decoration: dotted underline;
+}
+
 .right {
   flex: 2;
 }
 
 .marker {
   color: black
+}
+
+.icon {
+  vertical-align: middle;
 }

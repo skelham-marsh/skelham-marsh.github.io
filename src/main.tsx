@@ -5,11 +5,11 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import { Home } from './pages/Home/Home.tsx'
-import { FAQ } from './pages/FAQ/FAQ.tsx';
-import { Travel } from './pages/Travel/Travel.tsx';
-import { Story } from './pages/Story/Story.tsx';
-import { Layout } from './components/Layout/Layout.tsx';
+import { Home } from './pages/Home/Home'
+import { FAQ } from './pages/FAQ/FAQ';
+import { Travel } from './pages/Travel/Travel';
+import { Story } from './pages/Story/Story';
+import { Layout } from './components/Layout/Layout';
 
 import "./index.css"
 
