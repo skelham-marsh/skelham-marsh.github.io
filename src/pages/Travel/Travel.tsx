@@ -147,13 +147,14 @@ export function Map({ destination }: MapProps) {
   </GoogleMap >
 }
 
-export function HotelTripSummary(hotel: keyof typeof MARKERS) {
+type HotelTripSummaryProps = { hotel: keyof typeof MARKERS }
+export function HotelTripSummary({ hotel }: HotelTripSummaryProps) {
   const directions = MARKERS[hotel].directions as google.maps.DirectionsResult | null
   if (directions === null) return
   const duration = directions.routes[0]?.legs[0]?.duration?.text
   const distance = directions.routes[0]?.legs[0]?.distance?.text
   if (!distance || !duration) return
-  return `(${duration} (${distance}))`
+  return `- ${duration} taxi (${distance})`
 }
 
 type HotelProps = {
@@ -167,7 +168,7 @@ export function Hotel({ hotel, setDestination }: HotelProps) {
     onMouseEnter={setDestinationToHotel}
     onMouseLeave={clearDestination}
     className={styles.route}>
-    {MARKERS[hotel].label}
+    <span>{MARKERS[hotel].label}</span> <HotelTripSummary hotel={hotel} />
   </li>
 }
 

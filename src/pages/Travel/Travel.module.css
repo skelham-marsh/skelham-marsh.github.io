@@ -16,7 +16,10 @@
 .route {
   margin: 1rem 0;
   cursor: pointer;
-  text-decoration: dotted underline;
+
+  span {
+    text-decoration: dotted underline;
+  }
 }
 
 .right {
