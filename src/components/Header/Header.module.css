@@ -1,8 +1,8 @@
 .header {
   background: var(--color-pure-white);
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 2rem;
 
   a {
     text-decoration: none;
@@ -11,13 +11,15 @@
     font-family: Crimson Pro;
     font-style: italic;
     font-weight: 600;
+    flex: 1;
+    text-align: center;
   }
 
   p {
     display: inline-block;
     position: relative;
     margin: 1rem;
-  }  
+  }
 
   p::after {
     content: '';
@@ -33,7 +35,7 @@
   }
 
   :global(.active) p::after,
-  p:hover::after {
+  a:hover p::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -42,7 +44,7 @@
   h1 {
     text-align: center;
     margin: 0;
-    font-size: 4rem; 
+    font-size: 4rem;
     color: var(--color-text-primary);
     font-family: Ephesis, cursive;
   }
