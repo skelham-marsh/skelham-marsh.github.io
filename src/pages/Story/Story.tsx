@@ -1,32 +1,47 @@
 import React from "react";
 import styles from "./Story.module.css"
 
+import { BsEmojiHeartEyesFill } from "react-icons/bs";
+import { FaBus } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
+import { FaHammer } from "react-icons/fa6";
+import { FaHouse } from "react-icons/fa6";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { FaPlaneDeparture } from "react-icons/fa6";
+import { FaSnapchatGhost } from "react-icons/fa";
+import { GiAmpleDress } from "react-icons/gi";
+import { GiAquarium } from "react-icons/gi";
+import { GiBigDiamondRing } from "react-icons/gi";
+import { MdAddAPhoto } from "react-icons/md";
+
+const ICON_SIZE = 128
+const SNAPCHAT_STREAK = Math.floor((new Date().valueOf() - new Date("21 February 2017").valueOf()) / (1000 * 60 * 60 * 24))
+
+const events = [
+  { Icon: FaBus, date: "September 2014", description: "We first met on a bus. Jon decided to speak to Beth when he saw her Hills Road planner and from there we became friends" },
+  { Icon: MdAddAPhoto, date: "1st July 2016", description: "The first photo we ever took together is from our sixth form leavers ball" },
+  { Icon: FaGraduationCap, date: "December 2016", description: "We started talking again after we’d settled in to our different universities" },
+  { Icon: FaSnapchatGhost, date: `${SNAPCHAT_STREAK} days ago`, description: "Our snapchat streak started!" },
+  { Icon: BsEmojiHeartEyesFill, date: "March 11th 2017", description: "Jon asked Beth to be his girlfriend" },
+  { Icon: GiAquarium, date: "March 12th 2017", description: "First date at London Aquarium" },
+  { Icon: FaPlaneDeparture, date: "June 2018", description: "We had our first holiday together in Gran Canaria" },
+  { Icon: FaHammer, date: "March 2022", description: "We reserved our first home together – a new build in Over" },
+  { Icon: FaHouse, date: "14th October 2022 ", description: "We moved in together (yes, it took this long)" },
+  { Icon: GiBigDiamondRing, date: "4th December 2023", description: "ENGAGED!" },
+  { Icon: FaMapLocationDot, date: "January 2024", description: "Said yes to the venue" },
+  { Icon: GiAmpleDress, date: "February 2024", description: "Said yes to the dress" },
+]
+
+
 export function Story() {
   return <div className={styles.wrapper}>
-    <div>
-      <h2>Fun Facts</h2>
-      <ul>
-        <li>We met on the Cambridge Guided Bus during our first week at sixth form</li>
-        <li>Our first date was at London Aquarium</li>
-        <li>Jon proposed under the Northern Lights in Iceland in December 2024</li>
-        <li>By our wedding, we’ll have been together for 8 years</li>
-        <li>We have a snapchat streak of 2,553 days</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Timeline</h2>
-      <ul>
-        <li>September 2014 – We first met on a bus. Jon decided to speak to Beth when he saw her Hills Road planner and from there we became friends</li>
-        <li>1st July 2016 – The first photo we ever took together is from our sixth form leavers ball</li>
-        <li>December 2016 – We started talking again after we’d settled in to our different universities</li>
-        <li>March 11th 2017 – Jon asked Beth to be his girlfriend</li>
-        <li>March 12th 2017 – First date at London Aquarium</li>
-        <li>June 2018 – We had our first holiday together in Gran Canaria</li>
-        <li>March 2022 – We reserved our first home together – a new build in Over</li>
-        <li>14th October 2022 (It took this long) – We moved in together</li>
-        <li>4th December 2023 – ENGAGED!</li>
-        <li>Jan 2024 – Started wedding planning and said yes to the venue</li>
-      </ul>
-    </div>
+    {events.map(({ Icon, date, description }, index) => <div className={styles.event}>
+      <p className={styles.description}>{index % 2 === 1 ? description : null}</p>
+      <div className={styles.centre}>
+        <div className={styles.icon}><Icon size={ICON_SIZE} /></div>
+        <p className={styles.date}>{date}</p>
+      </div>
+      <p className={styles.description}>{index % 2 === 0 ? description : null}</p>
+    </div>)}
   </div >
 }
