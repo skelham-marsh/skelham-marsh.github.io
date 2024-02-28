@@ -36,12 +36,11 @@ const events = [
 export function Story() {
   return <div className={styles.wrapper}>
     {events.map(({ Icon, date, description }, index) => <div className={styles.event}>
-      <p className={styles.description}>{index % 2 === 1 ? description : null}</p>
+      <p className={styles.description}>{index % 2 === 1 ? <><span className={styles.date}>{date}</span><br />{description}</> : null}</p>
       <div className={styles.centre}>
         <div className={styles.icon}><Icon size={ICON_SIZE} /></div>
-        <p className={styles.date}>{date}</p>
       </div>
-      <p className={styles.description}>{index % 2 === 0 ? description : null}</p>
+      <p className={styles.description}>{index % 2 === 0 ? <><span className={styles.date}>{date}</span><br />{description}</> : null}</p>
     </div>)}
   </div >
 }

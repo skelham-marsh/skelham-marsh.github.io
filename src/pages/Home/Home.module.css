@@ -5,17 +5,20 @@
   vertical-align: middle;
   align-items: center;
   max-width: 100vw;
+  background: var(--color-background);
+  color: var(--color-white);
+  border-top: 0.2rem solid var(--color-white);
 
   .text {
-    margin:0;
+    margin: 0;
     margin-bottom: 4rem;
     font-size: 5rem;
     font-family: Crimson Pro;
     font-style: italic;
 
     p {
-      margin:0; 
-    } 
+      margin: 0;
+    }
   }
 
   .left {

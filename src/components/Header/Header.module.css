@@ -1,12 +1,12 @@
 .header {
-  background: var(--color-pure-white);
+  background: var(--color-theme-blue);
   display: flex;
   align-items: center;
   gap: 2rem;
 
   a {
     text-decoration: none;
-    color: var(--color-theme-dark-blue);
+    color: var(--color-white);
     font-size: x-large;
     font-family: Crimson Pro;
     font-style: italic;
@@ -29,7 +29,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--color-theme-dark-blue);
+    background-color: var(--color-white);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -40,13 +40,13 @@
     transform-origin: bottom left;
   }
 
-
   h1 {
     text-align: center;
     margin: 0;
     font-size: 4rem;
-    color: var(--color-text-primary);
+    color: var(--color-white);
     font-family: Ephesis, cursive;
+    white-space: nowrap;
   }
 
   button {

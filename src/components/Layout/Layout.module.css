@@ -9,5 +9,7 @@
 
   main {
     flex: 1;
+    background: var(--color-white);
+    color: var(--color-theme-blue);
   }
 }

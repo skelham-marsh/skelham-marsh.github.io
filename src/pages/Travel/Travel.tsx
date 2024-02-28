@@ -156,7 +156,8 @@ export function HotelTripSummary({ hotel }: HotelTripSummaryProps) {
   if (!distance || !duration) return
   return `- ${duration} taxi (${distance})`
 }
-
+//https://stackoverflow.com/questions/17746740/google-map-icons-with-visualrefresh
+//https://mt.google.com/vt/icon?psize=21&font=fonts/Roboto-Bold.ttf&color=ff135C13&name=icons/spotlight/spotlight-waypoint-a.png&ax=44&ay=50&text=T&scale=2
 type HotelProps = {
   hotel: keyof typeof MARKERS,
   setDestination: (destination: (keyof typeof MARKERS) | undefined) => void
