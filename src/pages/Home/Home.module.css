@@ -7,11 +7,12 @@
   background: var(--color-theme-blue);
   color: var(--color-white);
   flex: 1;
+  padding: 2rem;
 
   .text {
     margin: 0;
     margin-bottom: 4rem;
-    font-size: 5rem;
+    font-size: clamp(1rem, 9vw, 5rem);
     font-family: Crimson Pro;
     font-style: italic;
 
@@ -30,8 +31,40 @@
 
   img {
     border-radius: 2rem;
-    margin: 4rem;
-    overflow: hidden;
     max-width: 600px;
+  }
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .body {
+    position: absolute;
+    display: flex;
+    inset: 0;
+  }
+
+  .left {
+    z-index: 2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left,
+  .right {
+    position: absolute;
+    inset: 0;
+  }
+
+  .right {
+    padding: 4rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0 !important;
+    max-width: unset !important;
   }
 }

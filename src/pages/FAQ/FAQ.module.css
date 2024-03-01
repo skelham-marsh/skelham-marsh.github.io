@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .faq {
@@ -18,7 +18,7 @@
   }
 
   .question, p {
-    margin: 0;
+    margin: 1rem;
     margin-bottom: 0.5rem;
   }
 

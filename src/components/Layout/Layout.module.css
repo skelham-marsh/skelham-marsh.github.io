@@ -10,5 +10,6 @@
     color: var(--color-theme-blue);
     display: flex;
     overflow-y: auto;
+    position: relative;
   }
 }
