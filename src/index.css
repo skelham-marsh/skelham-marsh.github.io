@@ -15,7 +15,7 @@ html, body, #root {
   --color-pure-white: #FFFFFF;
   --color-theme-blue: #A5B6BE;
 
-  --color-background: #A5B6BE;
+  --color-background: var(--color-white);
   --color-text: var(--color-theme-blue);
 
   color-scheme: light;
