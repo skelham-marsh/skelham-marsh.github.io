@@ -180,35 +180,43 @@ export function Travel() {
   return <div className={styles.wrapper}>
     <div className={styles.left} onMouseLeave={clearDestination}>
       <h2>Venue</h2>
-      <address>
-        The Old Hall Ely <br />
-        Stuntney Causeway<br />
-        Ely<br />
-        Cambridgeshire<br />
-        CB7 5TR
-      </address>
+      <div>
+        <address>
+          The Old Hall Ely <br />
+          Stuntney Causeway<br />
+          Ely<br />
+          Cambridgeshire<br />
+          CB7 5TR
+        </address>
+      </div>
 
-      <h2 ><FaCarSide className={styles.icon} />By Car </h2>
-      <p>
-        Free parking is available for all guests.<br />
-        Cars can be left overnight but must be collected by 10am the next day.<br />
-        The Old Hall is on the outskirts of Ely, opposite the village of Stuntney.<br />
-        The entrance is just off the A142.
-      </p>
+      <h2><FaCarSide className={styles.icon} />By Car </h2>
+      <div>
+        <p>
+          Free parking is available for all guests.<br />
+          Cars can be left overnight but must be collected by 10am the next day.<br />
+          The Old Hall is on the outskirts of Ely, opposite the village of Stuntney.<br />
+          The entrance is just off the A142.
+        </p>
+      </div>
+
       <h2 onMouseEnter={() => setDestination("TRAIN_STATION")} onMouseLeave={clearDestination} className={styles.route}><WiTrain className={styles.icon} />By Train </h2>
-      <p>
-        Ely train station is the closest station to The Old Hall and is then just a 4 minute drive by taxi
-      </p>
+      <div>
+        <p>
+          Ely train station is the closest station to The Old Hall and is then just a 4 minute drive by taxi
+        </p>
+      </div>
 
       <h2><MdLocalHotel className={styles.icon} />Staying</h2>
-      <p>There are plenty of hotels options in Ely we have listed a few below but there are more to pick from</p>
-      <ul>
-        <Hotel hotel="TRAVELODGE" setDestination={setDestination} />
-        <Hotel hotel="RIVERSIDE_INN" setDestination={setDestination} />
-        <Hotel hotel="THE_LAMB" setDestination={setDestination} />
-        <Hotel hotel="POETS_HOUSE" setDestination={setDestination} />
-      </ul>
-
+      <div>
+        <p>There are plenty of hotels options in Ely we have listed a few below but there are more to pick from</p>
+        <ul>
+          <Hotel hotel="TRAVELODGE" setDestination={setDestination} />
+          <Hotel hotel="RIVERSIDE_INN" setDestination={setDestination} />
+          <Hotel hotel="THE_LAMB" setDestination={setDestination} />
+          <Hotel hotel="POETS_HOUSE" setDestination={setDestination} />
+        </ul>
+      </div>
     </div >
     <div className={styles.right}>
       <ErrorBoundary>
