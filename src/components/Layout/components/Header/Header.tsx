@@ -29,8 +29,10 @@ export function Header() {
       <div className={styles.mobile}>
         <label>
           <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
-          <RiCloseLine size={32} />
-          <RxHamburgerMenu size={32} />
+          <span>
+            <RiCloseLine size={32} />
+            <RxHamburgerMenu size={32} />
+          </span>
           <h1>Jon & Beth</h1>
         </label>
         <nav>
