@@ -20,16 +20,16 @@ const SNAPCHAT_STREAK = Math.floor((new Date().valueOf() - new Date("21 February
 const events = [
   { Icon: FaBus, date: "September 2014", description: "We first met on a bus. Jon decided to speak to Beth when he saw her Hills Road planner and from there we became friends" },
   { Icon: MdAddAPhoto, date: "1st July 2016", description: "The first photo we ever took together is from our sixth form leavers ball" },
-  { Icon: FaGraduationCap, date: "December 2016", description: "We started talking again after we’d settled in to our different universities" },
+  { Icon: FaGraduationCap, date: "December 2016", description: "We started chatting again after we’d settled in to our different universities" },
   { Icon: FaSnapchatGhost, date: `${SNAPCHAT_STREAK} days ago`, description: "Our snapchat streak started!" },
   { Icon: BsEmojiHeartEyesFill, date: "March 11th 2017", description: "Jon asked Beth to be his girlfriend" },
-  { Icon: GiAquarium, date: "March 12th 2017", description: "First date at London Aquarium" },
+  { Icon: GiAquarium, date: "March 12th 2017", description: "We had our first date at London Aquarium" },
   { Icon: FaPlaneDeparture, date: "June 2018", description: "We had our first holiday together in Gran Canaria" },
   { Icon: FaHammer, date: "March 2022", description: "We reserved our first home together – a new build in Over" },
   { Icon: FaHouse, date: "14th October 2022 ", description: "We moved in together (yes, it took this long)" },
   { Icon: GiBigDiamondRing, date: "4th December 2023", description: "ENGAGED!" },
-  { Icon: FaMapLocationDot, date: "January 2024", description: "Said yes to the venue" },
-  { Icon: GiAmpleDress, date: "February 2024", description: "Said yes to the dress" },
+  { Icon: FaMapLocationDot, date: "28th January 2024", description: "We said yes to the venue" },
+  { Icon: GiAmpleDress, date: "25th February 2024", description: "Beth said yes to the dress" },
 ]
 
 
