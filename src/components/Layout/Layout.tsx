@@ -1,6 +1,6 @@
 import React from "react"
 import { Outlet } from "react-router-dom"
-import { Header } from "../Header/Header"
+import { Header } from "./components/Header/Header"
 import { ErrorBoundary } from "../ErrorBoundary/ErrorBoundary"
 import * as styles from "./Layout.module.css"
 

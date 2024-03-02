@@ -1,12 +1,20 @@
 import React from 'react'
 
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLine } from "react-icons/ri";
 
 import * as styles from "./Header.module.css"
 
 export function Header() {
+  const [isOpen, setOpen] = React.useState(false);
+  const { pathname } = useLocation();
+
+  const toggleMenu = React.useCallback(() => setOpen(isOpen => !isOpen), [])
+  React.useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   return (
     <div className={styles.header}>
       <div className={styles.desktop}>
@@ -20,7 +28,7 @@ export function Header() {
       </div>
       <div className={styles.mobile}>
         <label>
-          <input type="checkbox" />
+          <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
           <RiCloseLine size={32} />
           <RxHamburgerMenu size={32} />
           <h1>Jon & Beth</h1>
