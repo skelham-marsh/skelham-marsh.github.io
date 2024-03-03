@@ -73,27 +73,27 @@
 @media (pointer:none), (pointer:coarse) {
   .wrapper {
     margin: 1rem;
-  }
-
-  .event:not(:last-of-type)::after {
-    display: none;
-  }
-
-  .event:nth-of-type(2n + 1) .description:nth-of-type(2n + 1) {
-    display: none;
-  }
-
-  .event:nth-of-type(2n) .description:nth-of-type(2n) {
-    display: none;
-  }
 
 
-  .icon {
-    padding: 1rem;
-  }
+    .event:not(:last-of-type)::after {
+      display: none;
+    }
 
-  svg {
-    width: 64px;
-    height: 64px;
+    .event:nth-of-type(2n + 1) .description:nth-of-type(2n + 1) {
+      display: none;
+    }
+
+    .event:nth-of-type(2n) .description:nth-of-type(2n) {
+      display: none;
+    }
+
+    .icon {
+      padding: 1rem;
+    }
+
+    svg {
+      width: 64px;
+      height: 64px;
+    }
   }
 }
