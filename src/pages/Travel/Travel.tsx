@@ -190,7 +190,10 @@ export function Travel() {
         </address>
       </div>
 
-      <h2><FaCarSide className={styles.icon} />By Car </h2>
+      <h2>
+        <FaCarSide className={styles.icon} />
+        <span>By Car</span>
+      </h2>
       <div>
         <p>
           Free parking is available for all guests.<br />
@@ -200,14 +203,20 @@ export function Travel() {
         </p>
       </div>
 
-      <h2 onMouseEnter={() => setDestination("TRAIN_STATION")} onMouseLeave={clearDestination} className={styles.route}><WiTrain className={styles.icon} />By Train </h2>
+      <h2 onMouseEnter={() => setDestination("TRAIN_STATION")} onMouseLeave={clearDestination} className={styles.route}>
+        <WiTrain className={styles.icon} style={{ fontSize: "2.5rem", marginLeft: "-0.2rem", marginRight: "0.2rem" }} />
+        <span>By Train</span>
+      </h2>
       <div>
         <p>
           Ely train station is the closest station to The Old Hall and is then just a 4 minute drive by taxi
         </p>
       </div>
 
-      <h2><MdLocalHotel className={styles.icon} />Staying</h2>
+      <h2>
+        <MdLocalHotel className={styles.icon} />
+        <span>Staying</span>
+      </h2>
       <div>
         <p>There are plenty of hotels options in Ely we have listed a few below but there are more to pick from</p>
         <ul>

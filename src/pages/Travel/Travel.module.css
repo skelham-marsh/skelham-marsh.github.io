@@ -21,6 +21,16 @@
   h2+div {
     margin: 0 0 2rem 0;
   }
+
+  h2 {
+    svg {
+      margin-right: 0.5rem;
+    }
+
+    svg, span {
+      vertical-align: middle;
+    }
+  }
 }
 
 .left {
@@ -44,8 +54,4 @@
 
 .marker {
   color: black
-}
-
-.icon {
-  vertical-align: middle;
 }
