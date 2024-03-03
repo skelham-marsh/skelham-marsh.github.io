@@ -10,7 +10,8 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  margin: 4rem auto;
+  margin: 2rem auto;
+  box-sizing: border-box;
 }
 
 .event {
@@ -67,4 +68,32 @@
   border: 0.5rem solid;
   padding: 2rem;
   background: var(--color-pure-white);
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .wrapper {
+    margin: 1rem;
+  }
+
+  .event:not(:last-of-type)::after {
+    display: none;
+  }
+
+  .event:nth-of-type(2n + 1) .description:nth-of-type(2n + 1) {
+    display: none;
+  }
+
+  .event:nth-of-type(2n) .description:nth-of-type(2n) {
+    display: none;
+  }
+
+
+  .icon {
+    padding: 1rem;
+  }
+
+  svg {
+    width: 64px;
+    height: 64px;
+  }
 }
