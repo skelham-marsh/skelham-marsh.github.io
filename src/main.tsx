@@ -16,19 +16,19 @@ import { Layout } from './components/Layout/Layout';
 
 import "./index.css"
 
-// const GOOGLE_ANALYTICS_KEY = import.meta.env.VITE_GOOGLE_ANALYTICS_KEY
-// // const IS_DEV = import.meta.env.DEV
-// if (GOOGLE_ANALYTICS_KEY) {
-//   Analytics({
-//     app: 'wedding-website',
-//     // debug: IS_DEV,
-//     plugins: [
-//       googleTagManager({
-//         containerId: GOOGLE_ANALYTICS_KEY
-//       })
-//     ]
-//   })
-// }
+const GOOGLE_ANALYTICS_KEY = import.meta.env.VITE_GOOGLE_ANALYTICS_KEY
+const IS_DEV = import.meta.env.DEV
+if (GOOGLE_ANALYTICS_KEY) {
+  Analytics({
+    app: 'wedding-website',
+    debug: IS_DEV,
+    plugins: [
+      googleTagManager({
+        containerId: GOOGLE_ANALYTICS_KEY
+      })
+    ]
+  })
+}
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
