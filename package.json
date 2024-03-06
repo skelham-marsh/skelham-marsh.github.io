@@ -17,11 +17,10 @@
     "preview": "vite preview --config config/vite.config.js"
   },
   "dependencies": {
-    "@analytics/google-tag-manager": "^0.5.5",
     "@react-google-maps/api": "^2.19.3",
-    "analytics": "^0.8.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.1"
   },
