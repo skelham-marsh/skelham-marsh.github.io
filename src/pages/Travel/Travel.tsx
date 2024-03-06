@@ -6,7 +6,7 @@ import { MdLocalHotel } from "react-icons/md";
 import { WiTrain } from "react-icons/wi";
 import { FaCarSide } from "react-icons/fa";
 
-const googleMapsApiKey = import.meta.env.VITE_API_KEY
+const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
 type MarkerData = {
   label: string,
