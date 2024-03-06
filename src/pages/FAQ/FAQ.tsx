@@ -14,8 +14,8 @@ const FAQs: FAQ[] = [
 ]
 
 export function FAQList() {
-  return FAQs.map(({ question, answer }) =>
-    <label className={styles.faq}>
+  return FAQs.map(({ question, answer }, index) =>
+    <label className={styles.faq} key={index}>
       <input type="checkbox" />
       <h2 className={styles.question}>{question}</h2>
       <p className={styles.answer}>{answer}</p>

@@ -35,7 +35,7 @@ const events = [
 
 export function Story() {
   return <div className={styles.wrapper}>
-    {events.map(({ Icon, date, description }, index) => <div className={styles.event}>
+    {events.map(({ Icon, date, description }, index) => <div className={styles.event} key={index}>
       <p className={styles.description}>{index % 2 === 1 ? <><span className={styles.date}>{date}</span><br />{description}</> : null}</p>
       <div className={styles.centre}>
         <div className={styles.icon}><Icon size={ICON_SIZE} /></div>
