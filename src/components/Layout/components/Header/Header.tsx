@@ -21,8 +21,9 @@ export function Header() {
         <nav>
           <NavLink to="/home"><p>Home</p></NavLink>
           <NavLink to="/story"><p>Our Story</p></NavLink>
+          <NavLink to="/rsvp"><p>RSVP</p></NavLink>
           <NavLink to="/home"><h1>Jon & Beth</h1></NavLink>
-          <NavLink to="/travel"><p>Travel & Accommodation</p></NavLink>
+          <NavLink to="/travel" style={{ flex: 2 }}><p>Travel & Accommodation</p></NavLink>
           <NavLink to="/faq"><p>FAQ</p></NavLink>
         </nav>
       </div>
@@ -42,6 +43,6 @@ export function Header() {
           <NavLink to="/faq"><p>FAQ</p></NavLink>
         </nav>
       </div>
-    </div>
+    </div >
   )
 }

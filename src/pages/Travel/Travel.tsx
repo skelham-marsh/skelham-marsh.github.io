@@ -6,7 +6,7 @@ import { MdLocalHotel } from "react-icons/md";
 import { WiTrain } from "react-icons/wi";
 import { FaCarSide } from "react-icons/fa";
 
-const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
 type MarkerData = {
   label: string,
@@ -75,7 +75,7 @@ type MapProps = { destination: (keyof typeof MARKERS) | undefined }
 export function Map({ destination }: MapProps) {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey
+    googleMapsApiKey: GOOGLE_MAPS_API_KEY
   })
 
   const [directions, setDirections] = React.useState<google.maps.DirectionsResult | null>(null)

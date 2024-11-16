@@ -4,7 +4,7 @@ import ReactGA from "react-ga4";
 import { Outlet, useLocation } from "react-router-dom"
 import { Header } from "./components/Header/Header"
 import { ErrorBoundary } from "../ErrorBoundary/ErrorBoundary"
-import * as styles from "./Layout.module.css"
+import styles from "./Layout.module.css"
 
 const GOOGLE_ANALYTICS_KEY = import.meta.env.VITE_GOOGLE_ANALYTICS_KEY
 
