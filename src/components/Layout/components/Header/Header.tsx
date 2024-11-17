@@ -39,6 +39,7 @@ export function Header() {
         <nav>
           <NavLink to="/home"><p>Home</p></NavLink>
           <NavLink to="/story"><p>Our Story</p></NavLink>
+          <NavLink to="/rsvp"><p>RSVP</p></NavLink>
           <NavLink to="/travel"><p>Travel & Accommodation</p></NavLink>
           <NavLink to="/faq"><p>FAQ</p></NavLink>
         </nav>
