@@ -7,11 +7,11 @@
   background: var(--color-theme-blue);
   color: var(--color-white);
   flex: 1;
+  gap: 1rem;
   padding: 2rem;
 
   .text {
     margin: 0;
-    margin-bottom: 7rem;
     font-size: clamp(1rem, 9vw, 5rem);
     font-family: Crimson Pro;
     font-style: italic;
@@ -60,7 +60,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .left,
