@@ -8,8 +8,9 @@ export function Home() {
   return (
     <div className={styles.body}>
       <div className={styles.left}>
+        <NavLink to="/rsvp/ceremony"><p>Ceremony RSVP</p></NavLink>
+        <NavLink to="/rsvp/reception"><p>Reception RSVP</p></NavLink>
         <div className={styles.text}>
-          <NavLink to="/rsvp"><p>Click here to RSVP</p></NavLink>
           <p>We're getting married </p>
           <p>{WEDDING_DATE}</p>
         </div>

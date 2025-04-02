@@ -22,7 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route element={<Layout />}>
           <Route path="*" element={<Home />} />
           <Route path="/story" element={<Story />} />
-          <Route path="/rsvp" element={<RSVP />} />
+          <Route path="/rsvp/ceremony" element={<RSVP isCeremony={true} />} />
+          <Route path="/rsvp/reception" element={<RSVP isCeremony={false} />} />
           <Route path="/travel" element={<Travel />} />
           <Route path="/faq" element={<FAQ />} />
         </Route>
